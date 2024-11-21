@@ -1,0 +1,1 @@
+SET PYTHON_BASE_DIR=D:\bin\python\

@@ -1,5 +1,7 @@
 @echo off
 
+call py-base
+
 REM Flag -r is to deactivate venv
 SET FOUND_R=false
 
@@ -26,7 +28,8 @@ FOR /F "usebackq delims=" %%A IN ("config.cnf") DO (
 :PROC
 
 call py-env %FIRST_LINE%
-
-call .\venv\Scripts\activate.bat
+cd
+echo Activating venv
+.\venv\Scripts\activate.bat
 
 :EOF

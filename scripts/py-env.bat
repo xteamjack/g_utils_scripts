@@ -1,5 +1,5 @@
 @echo off
-echo Python environment configurator
+echo Python environment configuration
 echo -------------------------------
 echo.
 

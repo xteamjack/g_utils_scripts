@@ -11,8 +11,11 @@ set SANS_TARGET=local
 set SANS_ENV=dev
 
 :: Key path variables
-set SANS_BASE_NODE=D:/wspc3/repo/node
-set SANS_BASE_PYTHON=D:/wspc3/repo/python
-set SANS_VAULT=D:/wspc3/repo/node/config.info/vault
+:: Make sure folder donot end with /
+set SANS_CODE_BASE=D:/wspc3/repo/
+set SANS_CONFIG_BASE=D:/wspc3/repo/other/config.info
+set SANS_LOG_BASE=D:/wspc3/logs
+set SANS_STORE_BASE=D:/wspc3/store
+set SANS_TEMP_BASE=D:/wspc3/temp
 
 echo -- done!

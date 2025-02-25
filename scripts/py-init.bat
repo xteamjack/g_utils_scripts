@@ -11,15 +11,15 @@ IF "%~1"=="" (
 )
 
 REM Check if the config file exists
-IF EXIST config.cnf (
-    echo Python version already configured
-    type config.cnf
+IF EXIST version.cnf (
+    echo Python version already initialized, run py-cnf to configure
+    type version.cnf
     exit /b 1
 )
 
 call py-env %1%
 
-echo %1% > config.cnf
+echo %1% > version.cnf
 
 python -m virtualenv venv
 .\venv\Scripts\activate

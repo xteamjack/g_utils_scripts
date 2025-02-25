@@ -18,8 +18,14 @@ IF "%FOUND_R%"=="true" (
     goto :EOF
 )
 
+IF NOT EXIST version.cnf (
+    echo Python version is not initialized, run py-init to initialize
+    type version.cnf
+    exit /b 1
+)
+
 REM Read the first line from the file
-FOR /F "usebackq delims=" %%A IN ("config.cnf") DO (
+FOR /F "usebackq delims=" %%A IN ("version.cnf") DO (
     SET FIRST_LINE=%%A
     echo The first line is: %%A
     GOTO :PROC

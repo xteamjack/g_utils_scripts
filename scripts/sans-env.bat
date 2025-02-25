@@ -3,7 +3,7 @@ echo Setting environment variables for app development
 echo.
 
 :: App parameters
-set SANS_APP_VER=0.0.2 
+@REM set SANS_APP_VER=0.0.2 
 
 :: Multi-tier parameters
 set SANS_INSTANCE=internal
@@ -18,4 +18,8 @@ set SANS_LOG_BASE=D:/wspc3/logs
 set SANS_STORE_BASE=D:/wspc3/store
 set SANS_TEMP_BASE=D:/wspc3/temp
 
-echo -- done!
+:: Additional configurations
+:: This is required to run python application in monorepo configuration
+set PYTHONPATH=%SANS_CODE_BASE%\python
+
+set | findstr "SANS"

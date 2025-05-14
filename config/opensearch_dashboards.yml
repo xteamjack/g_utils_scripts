@@ -1,0 +1,10 @@
+server.host: "127.0.0.1"
+
+opensearch.hosts: ["https://127.0.0.1:9200"]
+
+# Add these lines for basic auth:
+opensearch.username: "admin"
+opensearch.password: "Karlite@123$"  # Replace with your actual password
+
+# If you're using self-signed certs:
+opensearch.ssl.verificationMode: none

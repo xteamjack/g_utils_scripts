@@ -1,2 +1,2 @@
-D:\wspc3\repo>cd D:\bin\opensearch\opensearch-dashboards-3.0.0\bin
+cd D:\bin\opensearch\opensearch-dashboards-3.0.0\bin
 opensearch-dashboards.bat

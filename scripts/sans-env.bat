@@ -13,8 +13,10 @@ set SANS_ENV=dev
 :: Key path variables
 :: Make sure folder donot end with /
 set SANS_CODE_BASE=D:\wspc3\repo
+
+:: Use this for the old modules using file based config.info
 :: set SANS_CONFIG_BASE=D:\wspc3\repo\other\config.info
-set SANS_CONFIG_BASE=D:\wspc3\repo\node\n_g_t_mw_api_config\vault
+set SANS_CONFIG_BASE=D:\wspc3\repo\node\n_g_t_mw_api_config\server\vault
 set SANS_LOG_BASE=D:\wspc3\logs
 set SANS_STORE_BASE=D:\wspc3\store
 set SANS_TEMP_BASE=D:\wspc3\temp
@@ -45,9 +47,7 @@ set PYTHONPATH=%PYTHONPATH%;%SANS_CODE_BASE%\python
 
 set PATH=D:\bin\pandoc\3.6.3;C:\Program Files\Tesseract-OCR;D:\bin\ffmpeg\bin;%PATH%
 
-set | findstr "SANS"
-echo.
-set | findstr "DH"
+
 
 set PNPM_HOME=D:\bin\pnpm\10.6.4
 
@@ -55,6 +55,10 @@ set PATH=%PNPM_HOME%;%PATH%
 
 :: Special config parameters
 
+
+set | findstr "SANS"
+echo.
+set | findstr "DH"
 
 echo.
 

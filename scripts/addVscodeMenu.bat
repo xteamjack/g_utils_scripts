@@ -1,7 +1,7 @@
 @echo off
 :: Define variables
 set appName=VSCode
-set appPath="D:\bin\VSCode\1.93.1\Code.exe"
+set appPath="D:\bin\vscode\1.100.2\Code.exe"
 
 :: Check if the app path exists
 if not exist "%appPath%" (
@@ -18,5 +18,5 @@ reg add "HKEY_CLASSES_ROOT\*\shell\%appName%\command" /ve /t REG_SZ /d "\"%appPa
 
 echo Context menu option added successfully.
 
-call .\RestartExplorer.bat
+call RestartExplorer.bat
 pause

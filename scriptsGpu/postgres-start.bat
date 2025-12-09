@@ -1,0 +1,1 @@
+D:\bin\Postgres\15.1.1\bin\pg_ctl.exe start -D  "D:\bin\Postgres\15.1.1\data"
